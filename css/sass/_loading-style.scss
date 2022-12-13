@@ -1,0 +1,64 @@
+// variables files
+// @import "./variables.scss"  ;
+@use  "./variables"  as * ;
+
+.loader-section{
+  z-index:10000;
+  width:100vw;
+  height:100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color:var(--color-bg , $color-bg);
+  .loader {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+      &:before {
+        content: '';
+        position: absolute;
+      }
+      &:before,
+      >  span {
+      display: block;
+      width: $loader-height;
+      height:$loader-height ;
+      border-radius: 50%;
+      background: var(--them-color , $them-color);
+      animation-name: to-right;
+      animation-duration: $loader-speed;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+     > span:nth-child(even) {
+      visibility: hidden;
+    }
+    
+     > span:first-child {
+      animation-name: scale-up;
+    }
+     > span:last-child {
+      animation-name: scale-up;
+      animation-direction: reverse;
+      
+  }
+}
+}
+  @keyframes to-right {
+    to {
+      transform: translateX(200%);
+    }
+  }
+  @keyframes scale-up {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  
+  

@@ -1,0 +1,20 @@
+// // variables style file 
+@use "./sass/variables" as *;
+
+// Global style file
+@use "./sass/global" as *;
+
+// Loading style file 
+@use "./sass/loading-style" as *;
+
+// Header style file
+@use "./sass/sections/header-section" as * ;
+
+// Home style file
+// @use "./sass/sections/home-section" as * ;
+
+// Portfolio style file
+@use "./sass/sections/portfolio-section" as * ;
+
+// contact style file
+@use "./sass/sections/contact-section" as * ;

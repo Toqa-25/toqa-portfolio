@@ -1,0 +1,81 @@
+// variables files
+@use "../variables" as * ;
+
+.home{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    .home-content{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;   
+        .home-content-info ,.home-content-img{
+            flex:1;
+        }
+        .home-content-img{
+            display: flex;
+            justify-content: center;
+            .home-img{
+                width:fit-content;
+                height:fit-content;
+                position: relative;
+                &::before , &::after{
+                    content: "";
+                    border-width:5px;
+                    border-style:solid;
+                    position: absolute;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+                    height: 25px;
+                    width: 25px;
+                }
+                &::before {
+                    border-color:var(--them-color , $them-color) var(--them-color , $them-color) transparent transparent ;
+                    top: 0;
+                    right: 0;
+                }
+                &::after{
+                    border-color: transparent transparent var(--them-color , $them-color) var(--them-color , $them-color) ;
+                    bottom: 0;
+                    left: 0;
+                } 
+            }
+        }
+        .home-content-info{
+            .home-content-desc {
+                .jop-title , p{
+                    margin-top: 6px;
+                }
+                p{
+                    line-height:1.4;
+                }
+            }
+        } 
+    }
+}
+
+@media(max-width: 767px){
+    .home{
+        .home-content{
+            gap:50px;
+            .home-content-info , .home-content-img{
+                flex: none;
+                width: 100%;
+            }
+            .home-content-info {
+                text-align: center;
+            }
+        .home-content-img{
+                order: -1;
+                .home-img{
+                    // width: 200px;
+                    height: 200px;
+                }
+            }
+    }
+}  
+}   

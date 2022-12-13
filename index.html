@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Files -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Toqa Portfolio</title>
+</head>
+<body>
+    <!-- Start Loader Section -->
+    <div class="loader-section">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    
+    <!-- bar section -->
+    <div class="page-elements">
+
+     <!-- bar section -->
+     <div class="bar">
+    </div>
+
+    <!-- setting section -->
+    <div class="setting">
+        <div class="seeting-icon">
+            <i class="fa-solid fa-gear  gear-icon"></i>
+        </div>
+        <div class="light-mood">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+        <ul class="them-color">
+            <li data-color="#ffb400" class="them-color-item"></li>
+            <li data-color="#2196F3" class="them-color-item"></li>
+            <li data-color="#72b626" class="them-color-item"></li>
+            <li data-color="#ff00ff" class="them-color-item"></li>
+            <li data-color="#ff5d56" class="them-color-item"></li>
+            <li data-color="#2db7cd" class="them-color-item"></li>
+            
+        </ul>
+    </div>
+    <!-- Start Header Section -->
+    <section class="header">
+            <div class="logo">
+                <a href=""><span class="special-font">t</span>oqa</a>               
+            </div>
+            <ul class="header-list">
+                <li class="header-list-item  active" data-section="home">
+                    <i class="fa-solid fa-house-chimney icon "></i>
+                    <span>home</span>
+                </li>
+                <li class="header-list-item" data-section="portfolio">
+                    <i class="fa-solid fa-briefcase icon"></i>
+                    <span>portfolio</span>
+                </li>
+                <li class="header-list-item" data-section="about">
+                    <i class="fa-solid fa-user icon "></i>
+                    <span>about</span>
+                </li>
+                <li class="header-list-item" data-section="contact">
+                    <i class="fa-solid fa-comments icon"></i>
+                    <span>contact</span>
+                </li>
+            </ul>
+    </section>
+    
+    <!-- Start Home Section -->
+    <section id="home" class="section show home">
+        <div class="section-content  data">
+            <div class="data-info">
+            <h2 class="home-header">
+                <span class="special-them-color capitalize">hello,</span> 
+                <br> 
+            </h2>
+            <div class=" data-desc">
+                <h3 class="jop-title"> </h3>
+                <p class="jop-description"></p>
+                <h3 class="welcome-msg capitalize"></h3>
+                <p class="work-description "></p>
+            </div>
+            </div>
+            <div class=" data-img">
+                <div class=" data-img-content">
+                    <!-- <img src="images/personal/toqa-2.png" alt=""> -->
+                    <img src="images/personal/test.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start About Section -->
+    <section id="about" class="section">
+       <div class="special-head">
+        <h2 class="capitalize">about <span class="special-them-color">me</span></h2>
+       </div>
+       <div class="section-content  data">
+        <div class="data-info">
+            <h2 class="home-header">
+                <span class="special-them-color capitalize">hello,</span> 
+            </h2>
+            <div class=" data-desc">
+                <h3 class="jop-title capitalize">I'm  <span class="special-them-color capitalize special-font">t</span><span class="special-them-color capitalize">oqa frontend developer </span> </h3>
+                <p class="work-description ">I'm work as a <span class="special-them-color capitalize">freelancer </span></p>
+                <p class="jop-description ">I start my  journey of learning from <a href="https://elzero.org"  class="special-them-color capitalize" target="_blank" rel="noopener noreferrer">elzero academy</a>, and  I continue  in it because I'm passionate about what i do </p>
+                <p class="jop-description ">I have more   than 3 years of experience in this field, and I'm passionate about my job so I can code any design in HTML, CSS, Bootstrap, and JS in responsive design for all screens</p>
+                </div>
+            </div>
+        <div class=" data-img">
+            <div class=" data-img-content">
+                <!-- <img src="images/personal/toqa-2.png" alt=""> -->
+                <img src="images/personal/test.png" alt="">
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Start portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="portfolio-content">
+        <div class="special-head">
+            <h2 class="capitalize"><span class="special-them-color">me</span> portfolio</h2>
+        </div>
+        <div class="portfolio-buttons">
+        <div class="portfolio-button" data-project="htmlCssJsProjects">
+            <input type="radio" name="my-projects" id="html-css-js" checked>
+            <label for="html-css-js">HTML<span class="special-them-color">&</span>CSS<span class="special-them-color">&</span>JS</label>
+        </div>
+        <div class="portfolio-button" data-project="htmlCssProjects">
+            <input type="radio" name="my-projects" id="">
+            <label for="">HTML<span class="special-them-color">&</span>CSS</label>
+        </div>
+        </div>
+        <div id="portfolio-items">
+        </div>
+        
+        </div>
+    </section>
+
+    <!-- Start contact Section -->
+
+    <!-- Start contact Section -->
+    <section id="contact" class="section contact">
+        <div class="special-head">
+            <h2 class="capitalize">contact <span class="special-them-color">me</span></h2>
+        </div>
+         <div class="review slider">
+
+         </div>
+        <div class="contact-info">
+           <ul class="contact-list">
+            <li class="contact-list-item">
+                <a href="#">
+                    <span class="contact-item-icon special-them-color"><i class="fab fa-whatsapp"></i></span>
+                    <span class="contact-item-text capitalize">+201288859104</span>
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a href="https://github.com/Toqa-25">
+                    <span class="contact-item-icon special-them-color"><i class="fa-brands fa-github"></i></span>
+                    <span class="contact-item-text capitalize">github</span>
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a href="linkedin.com/in/toqa-abd-elsalam-656352184">
+                    <span class="contact-item-icon special-them-color"><i class="fa-brands fa-linkedin"></i></span>
+                    <span class="contact-item-text capitalize">linkedIn</span>
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a href="toqa35abdelsalam@gmail.com">
+                    <span class="contact-item-icon special-them-color"><i class="fa-solid fa-envelope"></i></span>
+                    <span class="contact-item-text ">toqa35abdelsalam@gmail.com</span>
+                </a>
+            </li>
+           </ul> 
+        </div>
+    </section>
+   </div>
+    <!-- Script Files -->
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contact/script.js" ></script>
+    <script src="js/portfolio/script.js" defer></script>
+    <!-- <script src="js/portfolio/html-css-js.json" ></script> -->
+    <!-- <script src="js/portfolio/script.js" ></script> -->
+</body>
+</html>
+
+<!-- I'm a <span class="special-them-color capitalize capitalize">frontend developer</span>, I have more   than 3 years of experience in this field, and I use semantic <span class="">HTML</span> tags to improve webpage SEO.</p>
+                <p>I'm passionate about my job so I can code any design in <span class="">HTML</span>, <span class="">CSS</span>, <span class=""> Bootstrap</span>, <span class="">JS</span>. </p>
+                <p>I build it responsive for all screens.</p>
+                <p>I'm work as a <span class="special-them-color capitalize">freelancer </span>, I'm communicate very well with my clients, I listen to their needs and help them to achieve their goals. -->
