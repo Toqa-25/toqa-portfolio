@@ -14,6 +14,13 @@
     
 
 function createElements (){
+    fetch("https://toqa-25.github.io/project-json/projects.json").then((res) => {
+        let data = res.json()
+        return data
+    }).then (results => {
+        console.log (results)
+        objectProjects = results.htmlCssJsProjects
+    })
     portfolio.innerHTML = ``
   for (const objectItem in objectProjects  ){
 let portfolioContent =  document.createElement("div")
@@ -157,7 +164,7 @@ portfolioButtons.map(portfolioButton => {
         let currentButton = e.currentTarget
     //    console.log (currentButton.dataset.project);
     let projectName = currentButton.dataset.project ;
-       fetch("./../../js/portfolio/projects.json").then((res) => {
+       fetch("https://toqa-25.github.io/project-json/projects.json").then((res) => {
         let data = res.json()
         return data
     }).then (results => {
