@@ -1,12 +1,12 @@
 let review = document.querySelector(".review") ; 
 let reviewsImgArray , reviewRows , reviewColumns ;
-fetch("./../../js/contact/reviews.json").then((res) => {
+fetch("https://toqa-25.github.io/reviews-json/reviews.json").then((res) => {
     let data = res.json()
     return data
 }).then (results => {
     reviewsImgArray = results
 })
-console.log (reviewsImgArray)
+// console.log (reviewsImgArray)
 function createReviewsElements (){ 
 /****************************************************/
     review.innerHTML = ``
@@ -149,3 +149,11 @@ review.appendChild(reviewHeader)
 window.addEventListener("DOMContentLoaded", createReviewsElements);
 window.addEventListener("load", createReviewsElements);
 window.addEventListener("resize", createReviewsElements);
+
+fetch("https://toqa-25.github.io/reviews-json/reviews.json").then((res) => {
+    let data = res.json()
+    return data
+}).then (results => {
+    // reviewsImgArray = results
+    console.log ("contact results",results)
+})

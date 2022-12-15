@@ -4,7 +4,7 @@
     let portfolio = document.getElementById("portfolio-items") , grid , rows , columns , previousButtons , nextButtons , itemsArrayStore , itemsCount  , gridWidth;
     let objectProjects  , portfolioItems , closeButton , elementTable ,
     portfolioButtons = [...document.querySelectorAll(".portfolio-button")] ;
-    fetch("./../../js/portfolio/projects.json").then((res) => {
+    fetch("https://toqa-25.github.io/project-json/projects.json").then((res) => {
         let data = res.json()
         return data
     }).then (results => {
@@ -166,4 +166,12 @@ portfolioButtons.map(portfolioButton => {
     })
     
     }
+})
+
+fetch("https://toqa-25.github.io/project-json/projects.json").then((res) => {
+    let data = res.json()
+    return data
+}).then (results => {
+    // reviewsImgArray = results
+    console.log ("projects results",results)
 })
