@@ -155,7 +155,8 @@ let portfolioContent =  document.createElement("div")
 }
 }
 
-window.addEventListener("DOMContentLoaded" ,createElements);
+// window.addEventListener("DOMContentLoaded" ,createElements);
+document.querySelector('[data-section="portfolio"]').addEventListener("click", createElements)
 window.addEventListener("load", createElements);
 window.addEventListener("resize", createElements);
 
@@ -175,10 +176,15 @@ portfolioButtons.map(portfolioButton => {
     }
 })
 
-fetch("https://toqa-25.github.io/project-json/projects.json").then((res) => {
-    let data = res.json()
-    return data
-}).then (results => {
-    // reviewsImgArray = results
-    console.log ("projects results",results)
-})
+// fetch("https://toqa-25.github.io/project-json/projects.json").then((res) => {
+//     let data = res.json()
+//     return data
+// }).then (results => {
+//     // reviewsImgArray = results
+//     console.log ("projects results",results)
+// })
+
+// document.querySelector('[data-section="portfolio"]').onclick = () => {
+//     console.log ("no")
+//     // createElements()
+// }
