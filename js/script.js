@@ -51,7 +51,7 @@ lightMood.onclick = () => {
     if (lightMood.classList.contains("light")) {
         document.documentElement.style.setProperty("--color-bg", "#f7f6f6") 
         document.documentElement.style.setProperty("--color", "rgb(0, 0, 0)") 
-        document.documentElement.style.setProperty("--header-bg", "rgb(0 0 0 / 30%)" ) 
+        document.documentElement.style.setProperty("--header-bg", "rgb(0 0 0 / 60%)" ) 
     }  else{
         document.documentElement.style.setProperty("--color-bg", "rgb(0, 0, 0)") 
         document.documentElement.style.setProperty("--color", "#fff") 
