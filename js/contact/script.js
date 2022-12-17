@@ -9,6 +9,7 @@ fetch("https://toqa-25.github.io/reviews-json/reviews.json").then((res) => {
 // console.log (reviewsImgArray)
 function createReviewsElements (){ 
 /****************************************************/
+// let reviewsImgArray ;
 fetch("https://toqa-25.github.io/reviews-json/reviews.json").then((res) => {
     let data = res.json()
     return data
@@ -153,7 +154,7 @@ review.appendChild(reviewHeader)
 // createReviewsElements ()
 // window.onload  = createReviewsElements
 document.querySelector('[data-section="contact"]').addEventListener("click", createReviewsElements)
-window.addEventListener("load", createReviewsElements);
+// window.addEventListener("load", createReviewsElements);
 window.addEventListener("resize", createReviewsElements);
 
 // fetch("https://toqa-25.github.io/reviews-json/reviews.json").then((res) => {

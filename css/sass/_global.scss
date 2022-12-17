@@ -18,6 +18,9 @@
     font-family: 'Roboto', sans-serif;
     color: var(--color , $color);
     overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100vw;
+    height: 100vh;
   }
 
   ::-webkit-scrollbar {
@@ -72,6 +75,8 @@
     display:flex;
     color: var(--color , $color);
     display: none;
+    height: 100vh;
+    position: relative;
   }
   .setting {
     position: fixed;

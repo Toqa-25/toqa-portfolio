@@ -4,9 +4,9 @@
 let loadElement = document.querySelector(".loader-section"),
     pageElements = document.querySelector(".page-elements") ,
     home = document.querySelector(".home"),
-    sections = [...document.querySelectorAll(".section")]
+    sections = [...document.querySelectorAll(".section")] ;
 
-    window.onload = () => {
+    window.window.addEventListener ("load" , () => {
         loadElement.style.display = "none";
         pageElements.style.display = "flex";
         sections.map(section => {
@@ -16,6 +16,17 @@ let loadElement = document.querySelector(".loader-section"),
         home.classList.remove("display-none")
         home.classList.add("flex")
     }
+    )
+    // window.onload = () => {
+    //     loadElement.style.display = "none";
+    //     pageElements.style.display = "flex";
+    //     sections.map(section => {
+    //         section.classList.add("display-none")
+    //         section.classList.remove("flex")
+    //     })
+    //     home.classList.remove("display-none")
+    //     home.classList.add("flex")
+    // }
     
     
     // bar function 
@@ -27,12 +38,16 @@ let loadElement = document.querySelector(".loader-section"),
     header.classList.toggle("show")
 }
 // scroll function
-window.onscroll = () => { 
-    if (header.classList.contains("show")){
-           
+// window.onscroll = () => { 
+//     if (header.classList.contains("show")){         
+//         header.classList.remove("show")
+//     }
+// };
+window.addEventListener("scroll" ,   () => { 
+    if (header.classList.contains("show")){         
         header.classList.remove("show")
     }
-};
+})
 
 
 // setting function 
