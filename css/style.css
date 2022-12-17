@@ -338,6 +338,7 @@ button {
   }
   .data {
     gap: 50px;
+    flex-direction: column;
   }
   .data .data-info, .data .data-img {
     flex: none;

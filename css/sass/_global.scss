@@ -340,6 +340,7 @@
   }
   .data{
       gap:50px;
+      flex-direction: column;
     .data-info , .data-img{
         flex: none;
         width: 100%;
