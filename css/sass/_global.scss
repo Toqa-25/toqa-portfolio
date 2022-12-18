@@ -250,6 +250,10 @@
         }
     }
     .data-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
         .data-desc {
             .jop-title , p , .welcome-msg{
                 margin-top: 6px;

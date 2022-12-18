@@ -256,6 +256,12 @@ button {
   bottom: 0;
   left: 0;
 }
+.data .data-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .data .data-info .data-desc .jop-title, .data .data-info .data-desc p, .data .data-info .data-desc .welcome-msg {
   margin-top: 6px;
 }
